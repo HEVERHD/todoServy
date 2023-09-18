@@ -32,6 +32,8 @@ Para iniciar a codificar, recuerde que se usa [GitHub Flow](https://guides.githu
 
 No haga cambios directamente sobre la rama `develop` ni tampoco sobre `main`, siempre cree una nueva rama `feature` y una vez realizado `git push` al servidor con sus cambios, cree un pull request con los cambios hacia `develop` para que otra persona del equipo o en su defecto usted mismo, revise y apruebe el PR.
 
+### **Iniciar la Aplicación de React Native con Expo**
+
 ##### **npm**
 
 Localmente, ejecute `npm install` para descargar las dependencias de la aplicación después de haber realizado un `git pull`. Además de descargar, también realiza una serie de procedimientos automáticos de acuerdo al entorno de desarrollo en el que se ejecuta. Nunca ejecute `npm update`. Si quiere subir la versión de una dependencia, edite la versión de dicha dependencia en el archivo `package.json` directamente, y luego ejecute nuevamente `npm install`.
@@ -41,8 +43,6 @@ Si quiere actualizar la versión de alguna dependencia, le recomendamos instalar
 ```
 npm i -g npm-check-updates
 ```
-
-### **Iniciar la Aplicación de React Native con Expo**
 
 `Instalar Expo CLI:` Asegúrate de tener Node.js y npm instalados en tu máquina.
 Abre tu terminal y ejecuta el siguiente comando para instalar la herramienta Expo CLI globalmente:
