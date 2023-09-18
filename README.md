@@ -76,8 +76,6 @@ npx expo start
 
   ***
 
-- **Autor:** Hevert Gelis - <hever11.hdgd@gmail.com>
+## Arquitectura basada en Redux
 
----
-# todoServy
-# todoServy
+Gestión del Estado Global: Redux proporciona un almacén global de estado que puede ser accesible desde cualquier parte de la aplicación. Esto facilita la gestión del estado de la aplicación, especialmente en aplicaciones grandes y complejas. en este caso la store llamda `todo`
