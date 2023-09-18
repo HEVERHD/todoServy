@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Text,
   View,
   TextInput,
-  Switch,
+  StatusBar,
   TouchableOpacity,
   ScrollView,
   ActivityIndicator,
@@ -14,14 +14,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTodoAsync } from "../../redux/todosSlices";
 import { useNavigation } from "@react-navigation/native";
 import TimePicker from "../../components/DataPicker.js";
-
-import { setNewTaskCreated } from "../../redux/todosSlices.js";
-
-//icons
-import { Ionicons } from "@expo/vector-icons";
-
-//alert
-import { ALERT_TYPE, Toast } from "react-native-alert-notification";
 
 // Import the styles
 import { styles } from "../../theme/addTodoTheme";
@@ -34,7 +26,6 @@ export default function AddTodoScreen() {
   const [selectedHour, setSelectedHour] = useState("");
   const [isToday, setIsToday] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const isNewTaskCreated = useSelector((state) => state.todos.isNewTaskCreated);
 
   const clearInputs = () => {
     setTitle("");
@@ -114,6 +105,7 @@ export default function AddTodoScreen() {
 
   return (
     <View style={styles.containerMain}>
+      <StatusBar barStyle="light-content" />
       <View style={styles.imageBack}>
         <Image
           source={require("../../assets/task.png")}

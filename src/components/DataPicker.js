@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { View, Text } from "react-native";
-import { Picker } from "@react-native-picker/picker";
+import { View } from "react-native";
 
 export default function TimePicker({ onHourChange }) {
   const [selectedHour, setSelectedHour] = useState(""); // Estado para almacenar la hora seleccionada
@@ -44,18 +43,6 @@ export default function TimePicker({ onHourChange }) {
         marginHorizontal: 90,
         marginTop: -38,
       }}
-    >
-      <Picker
-        style={{
-          color: "#DADADA",
-        }}
-        selectedValue={selectedHour}
-        onValueChange={(itemValue) => handleHourChange(itemValue)}
-      >
-        {hours.map((hour) => (
-          <Picker.Item key={hour} label={hour} value={hour} color="#50505F" />
-        ))}
-      </Picker>
-    </View>
+    ></View>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, TouchableOpacity, Image } from "react-native";
+import { View, Text, TouchableOpacity, Image, StatusBar } from "react-native";
 import TodoList from "../../components/TodoList";
 import { useNavigation } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -42,6 +42,7 @@ export default function TaskDoneScreen() {
 
   return (
     <View style={styles.containerMain}>
+      <StatusBar barStyle="light-content" />
       {completedTodos.length === 0 ? (
         <View style={styles.emptyComponent}>
           <Image

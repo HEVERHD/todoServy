@@ -74,9 +74,11 @@ export function DrawerNavigator() {
               onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
             >
               <Ionicons name="menu" size={24} color="#DADADA" />
-              {/* Cambia el color aquí */}
             </TouchableOpacity>
           ),
+        }}
+        componentProps={{
+          statusBarStyle: "light-content", // Barra de estado blanca
         }}
       />
     </Drawer.Navigator>

@@ -47,7 +47,6 @@ export const deleteCompletedTodoReducer = () => (dispatch, getState) => {
   dispatch(setNewTaskCreated(false));
 };
 
-// Acción asincrónica
 export const loadTodosAsync = () => {
   return async (dispatch) => {
     try {
@@ -62,7 +61,6 @@ export const loadTodosAsync = () => {
   };
 };
 
-// Acción asincrónica
 export const addTodoAsync = (newTodo) => {
   return async (dispatch, getState) => {
     try {

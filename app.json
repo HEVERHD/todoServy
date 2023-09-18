@@ -4,10 +4,10 @@
     "slug": "todo-app-servy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,14 +19,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
         "versionCode": "1",
         "package": "com.hdservy.todo"
-      }
+      },
+      "package": "com.heverdj72.todoappservy"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "da2da3dd-84f2-4bec-9fe5-9dbcacdd4ef7"
+      }
     }
   }
 }
