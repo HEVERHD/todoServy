@@ -56,6 +56,9 @@ y luego ejecute para iniciar una aplicación de ejemplo usando un emulador o dis
 ```
 npx expo start
 ```
+### **Pantalla inicial de la App* y estamos listo para navegar en ella 
+![Texto alternativo]([URL_de_la_imagen](https://raw.githubusercontent.com/HEVERHD/todoServy/main/Screenshot_1695011168.png))
+
 
 ### **Componentes personalizados**
 
