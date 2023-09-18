@@ -57,6 +57,10 @@ y luego ejecute para iniciar una aplicación de ejemplo usando un emulador o dis
 npx expo start
 ```
 
+y listo, tenemos la vista principal de la APP
+
+![Texto alternativo](https://raw.githubusercontent.com/HEVERHD/todoServy/main/Screenshot_1695011168.png)
+
 ### **Componentes personalizados**
 
 - `Componente DeleteConfirmationDialog` Este componente muestra un diálogo de confirmación para eliminar elementos. Proporciona botones para confirmar o cancelar la acción.
