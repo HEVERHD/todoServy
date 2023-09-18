@@ -78,7 +78,7 @@ export function DrawerNavigator() {
           ),
         }}
         componentProps={{
-          statusBarStyle: "light-content", // Barra de estado blanca
+          statusBarStyle: "light-content",
         }}
       />
     </Drawer.Navigator>
